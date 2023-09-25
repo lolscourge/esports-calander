@@ -1,0 +1,76 @@
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+@media (max-width: 480px) {
+    .calendar-grid {
+      grid-template-columns: 1fr; /* Stack days vertically on small screens */
+    }
+    .day-header {
+        display: none
+    }
+  }
+
+h1 {
+    text-align:center;
+    }
+
+.day, .day-header {
+    color: black;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+
+
+.game-group {
+    background-color: #90caf9;
+    border-radius: 4px;
+    margin: 4px 0;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.game-group-csgo {
+    /* Styles specific to CS:GO game group */
+    background-color: rgba(255, 255, 0, 0.5); /* Example Style */
+    border-radius: 4px;
+    margin: 4px 0;
+    margin-bottom: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.game-group-dota-2 {
+    /* Styles specific to Dota 2 game group */
+    background-color: rgba(255, 0, 0, 0.5); /* Example Style */
+    border-radius: 4px;
+    margin: 4px 0;
+    margin-bottom: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.game-group-lol {
+    /* Styles specific to League of Legends game group */
+    background-color: rgba(0, 128, 0, 0.5); /* Example Style */
+    border-radius: 4px;
+    margin: 4px 0;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+
+.matches {
+    list-style-type: disc
+}
+
+h6 {
+    margin: 0
+}
